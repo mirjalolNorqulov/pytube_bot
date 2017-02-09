@@ -11,8 +11,8 @@ def start(message):
 	bot.send_message(message.chat.id, text = text)
 
 @bot.message_handler(commands = ['help'])
-def start(message):
-	text = "<b>Buyruqlar</b>\n<b>start<b> - ishga tushirish\n<b>help</b> - yordam\nYouTube video url sini yuboring va yuklab oling"
+def help(message):
+	text = "<b>Buyruqlar</b>\n<b>start<b> - ishga tushirish\n<b>help</b> - yordam\nYouTube video url sini yuboring va yuklab oling\n<b>Muallif</b>: Mirjalol Norqulov"
 	bot.send_message(message.chat.id, text = text, parse_mode = "HTML")
 
 
